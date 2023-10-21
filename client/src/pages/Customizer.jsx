@@ -48,12 +48,12 @@ const Customizer = () => {
   }
 
   const handleSubmit = async (type) => {
-    if(!prompt) return alert("Please enter a prompt");
+    if(!prompt) return alert("Пожалуйста, введите запрос");
 
     try {
       setGeneratingImg(true);
 
-      const response = await fetch('https://tshirt-ai-sgb3.onrender.com/api/v1/dalle', {
+      const response = await fetch('https://print-magic.onrender.com/api/v1/dalle', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
